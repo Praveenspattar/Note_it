@@ -19,10 +19,15 @@
             android:layout_height="wrap_content"
             android:id="@+id/title"
             android:text="Title"
-            android:textColor="@color/silver"
+            android:textColor="@color/titlecolor"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:layout_marginStart="5dp"/>
+            android:layout_marginStart="5dp"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowColor="@color/black"
+            android:shadowRadius="1.6"
+            android:textAllCaps="true"/>
 
         <TextView
             android:layout_width="match_parent"
