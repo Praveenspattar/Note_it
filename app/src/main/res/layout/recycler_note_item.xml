@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="10dp"
+
+    android:layout_marginVertical="10dp"
     android:backgroundTint="@color/layout"
     app:cardCornerRadius="10dp"
     >
@@ -17,10 +18,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/title"
+            android:id="@+id/note_title_textView"
             android:text="Title"
             android:textColor="@color/titlecolor"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginStart="5dp"
             android:shadowDx="1.5"
@@ -32,11 +33,25 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/description"
+            android:id="@+id/note_content_textView"
             android:text="Description"
             android:textColor="@color/silver"
-            android:textSize="20sp"
-            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note_timestamp_textView"
+            android:text="Description"
+            android:textColor="@color/silver"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:gravity="end"
             />
 
     </LinearLayout>

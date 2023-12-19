@@ -1,22 +1,35 @@
 package com.myapps.note_it;
 
-public class Model {
-    private String title;
-    private String desc;
+import com.google.firebase.Timestamp;
 
-    public String getTitle() {
-        return title;
+public class Note {
+    String title;
+    String content;
+    com.google.firebase.Timestamp timestamp;
+
+    public Note() {
     }
+
+    public Timestamp getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getTitle() {return title;}
 
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getContent() {
+        return content;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setContent(String content) {
+        this.content = content;
     }
+
 }
